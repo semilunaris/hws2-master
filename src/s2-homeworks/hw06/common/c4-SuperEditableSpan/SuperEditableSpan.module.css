@@ -1,11 +1,44 @@
 .spanBlock {
+    display: flex;
+    align-items: center;
+    gap: 30px 30px;
+    margin-bottom: 50px;
 }
 
 .span {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.span:hover {
+    color: #007bff;
+    transform: scale(1.05);
 }
 
 .input {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff;
 }
 
 .pen {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pen:hover {
+    transform: scale(1.2);
 }
