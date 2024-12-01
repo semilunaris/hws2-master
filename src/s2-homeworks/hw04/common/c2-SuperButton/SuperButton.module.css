@@ -1,36 +1,58 @@
 .button {
+    min-width: 132px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600; /* исправлено на правильное значение */
+    border: none;
 }
 
 .disabled {
+    background-color: #004D99; /* добавьте цвет для disabled */
 }
 
 .secondary {
+    background-color: #f2f4f6;  /* Цвет для secondary кнопки */
+    color: #005bb5;
 }
 
 .default {
+    background-color: #0066CC;
 }
 
 .red {
+    background-color: #CC1439;
 }
 
 .default:hover {
+    background-color: #0080FF;  /* Цвет при наведении */
 }
 
 .red:hover {
+    background-color:#FF1A47;  /* Цвет при наведении */
 }
 
 .secondary:hover {
+    background-color: #f2f4f6;  /* Цвет при наведении */
+    border: 1px, solid,  #0066CC;
 }
 
-
 .default:active {
+    background-color: #004c99;  /* Цвет при нажатии */
 }
 
 .secondary:active {
+    background-color: #C9E5FF;  /* Цвет при нажатии */
+    border: 1px, solid,  #0066CC;
 }
 
+
 .red:active {
+    background-color: darkred;  /* Цвет при нажатии */
 }
 
 .button:disabled {
+    opacity: 50%;
+   color: rgba(0, 46, 92, 1)
 }

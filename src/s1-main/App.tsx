@@ -2,7 +2,9 @@ import React from 'react'
 import s from './App.module.css'
 import HW1 from '../s2-homeworks/hw01/HW1'
 import HW5 from '../s2-homeworks/hw05/HW5'
-import HW7 from '../s2-homeworks/hw07/HW7'
+import HW4 from '../s2-homeworks/hw04/HW4'
+import HW3 from '../s2-homeworks/hw03/HW3'
+
 
 function App() {
     return (
@@ -10,11 +12,12 @@ function App() {
             {/* // <HW1/> */}
             {/*раскомментировать по ходу выполнения*/}
             {/*<HW2/>*/}
-            {/*<HW3/>*/}
-            {/*<HW4/>*/}
+            {/* <HW3/> */}
+            <HW4/>
 
             {/*при выполнении дз 5 и более - закомментировать здесь дз 1-4, так как они есть внутри дз 5*/}
-            <HW7/>
+            {/* <HW5/> */}
+          
         </div>
     )
 }
