@@ -1,27 +1,79 @@
+/* Основной контейнер сайдбара */
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* скрыт за пределами экрана */
+    width: 250px;
+    height: 100%;
+    background-color: #34495e;
+    transition: left 0.3s ease; /* плавное появление */
+    z-index: 999; /* на переднем плане */
+    padding: 20px 0;
 }
 
+/* Когда меню открыто */
 .sidebar.open {
+    left: 0; /* меню появляется */
 }
 
+/* Затемнение фона при открытом меню */
 .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998; /* фоновый слой */
 }
 
+/* Навигация внутри сайдбара */
 .nav {
-    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
+/* Ссылки в навигации */
 .nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
+/* Эффект наведения на ссылки */
 .nav a:hover {
+    color: #1abc9c; /* цвет при наведении */
 }
 
+/* Активная ссылка */
 .nav a.active {
-color: aqua;
-}
-.close {
+    color: #1abc9c; /* цвет активной ссылки */
 }
 
+/* Кнопка закрытия меню */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Стили для изображения кнопки закрытия */
 .close img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* инвертируем цвета для контраста */
+    transition: transform 0.3s ease;
+}
+
+/* Эффект наведения на кнопку закрытия */
+.close img:hover {
+    transform: rotate(90deg); /* поворачиваем иконку при наведении */
 }
