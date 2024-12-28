@@ -5,11 +5,6 @@ import s2 from '../../s1-main/App.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import User from './User'
 
-/*
-* 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом
-* 2 - дописать компоненту User
-* 3 - сделать стили в соответствии с дизайном
-* */
 
 export type UserType = {
     _id: number
@@ -32,6 +27,7 @@ const HW8 = () => {
     const [currentSort, setCurrentSort] = useState('')
 
     const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
+
 
     const sortUp = () => {
         setPeople(
